@@ -1,0 +1,21 @@
+<h2>Our Pokemons</h2>
+<div ng-repeat="pokemon in pokemonsIndexCtrl.pokemons">
+	<hr>
+	<div class="row">
+
+		<div class="col-xs-4">
+			<img ng-src="{{pokemon.image}}" class="img-responsive">
+		</div>
+		<div class="col-xs-8">
+			<h5><a ng-href="/pokemons/{{pokemon._id}}">{{pokemon.name}}</a></h5>
+			<br>
+			<p class="small">Pokedex Number {{pokemon.pokedex}}</p>
+			<p class="small">Evolves from {{pokemon.evolves_from}}</p>
+		</div>
+		<div>
+		<button class = "click">Edit</button>
+		<button class = "click" ng controller +"pokemonsindexCrtl.delete-pokemon">Delete</button>
+		<button class = "click">Save</button>
+		</div>
+	</div>
+</div>

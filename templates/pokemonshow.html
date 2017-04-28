@@ -1,0 +1,15 @@
+<h2>{{pokemonsShowCtrl.pokemon.name}}</h2>
+<hr>
+<div class="row">
+	<div class="col-xs-6">
+		<img ng-src="{{pokemonsShowCtrl.pokemon.image}}" class="img-responsive">
+	</div>
+	<div class="col-xs-6">
+		<p><strong>Pokedex:</strong> {{pokemonsShowCtrl.pokemon.pokedex}}</p>
+		<p><strong>Evolves From:</strong> {{pokemonsShowCtrl.pokemon.evolves_from}}</p>
+		<br>
+
+	<div>	<!-- buttons to edit/delete -->
+		<a href="#" ng-click="editForm=!editForm" class="btn btn-default">Edit <span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+		<a href="#" ng-click="pokemonsShowCtrl.deletepokemon(pokemonsShowCtrl.pokemon)" class="btn btn-default">Delete <span class="glyphicon glyphicon-trash"></span></a>
+	</div>	
