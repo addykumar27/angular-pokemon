@@ -9,12 +9,12 @@ config.$inject = ['$routeProvider', '$locationProvider'];
 function config (  $routeProvider,   $locationProvider  )  {
   $routeProvider
     .when('/', {
-      templateUrl: 'templates/pokemonsindex.html',
+      templateUrl: '../../templates/pokemonsindex.html',
       controller: 'pokemonsIndexController',
       controllerAs: 'pokemonsIndexCtrl'  
     })
     .when('/pokemons/:id', {
-      templateUrl: 'templates/pokemonshow.html',
+      templateUrl: '../../templates/pokemonshow.html',
       controller: 'pokemonsShowController',
       controllerAs: 'pokemonsShowCtrl'
     })
